@@ -1,0 +1,234 @@
+:root {
+    --main-color:#0c2753;
+    --main-color-2:#1f4481;
+    --sub-color:#E0CDAE;
+}
+
+.fp-watermark{ display: none; }
+.fa, .fas {
+    opacity: .7;
+}
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{
+	background: white;
+}
+.my-arrow{
+    font-size: 4em;
+}
+
+.fa, .far, .fas {
+    color: #fff;
+}
+
+
+
+.d-none{ display: none; }
+
+.section, .slide {
+    background-size: cover !important;
+}
+#section0, #section1, #section2, #section3, #slide1, #slide2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*#section0{
+    background-image: url(imgs/bg1.jpg);
+}*/
+#section1{
+    /*background-image: url(../../imgs/bg2.jpg);*/
+    background: #0c254e;
+    
+}
+/*#section2{
+    background: #0c254e;
+}*/
+#section3{
+    /*background-image: url(imgs/bg4.jpg);*/
+}
+#section3 h1{
+    color: #000;
+}
+#slide1{
+    /*background-image: url(imgs/bg1.jpg);*/
+}
+#slide2{
+    /*background-image: url(imgs/bg5.jpg);*/
+}
+
+#fp-nav ul li .fp-tooltip.fp-left {
+    left: 25px;
+}
+
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-image: /* our video */;
+    background-position: center center;
+    background-size: contain;
+    object-fit: fill; /*cover video background */
+    z-index:3;
+}
+
+/*video::-webkit-media-controls {
+  display:none !important;
+}   */
+
+
+.line2{ -webkit-line-clamp: 2; display: -webkit-box !important; -webkit-box-orient: vertical; overflow: hidden;  }
+
+
+#menu{ background-image: linear-gradient(#0d2958ad, #0d295800); padding-bottom: 50px; }
+.menu{ justify-content: space-between !important; padding-left: 100px !important; }
+.menu .logo img{ height: 100px; }
+
+.trangchu {background-image: url(../imgs/bg-main.png); background-color: var(--main-color); }
+.trangchu .layer{ padding: 0px 20px 20px 20px }
+.trangchu .layer h2{ font-size: 18px; text-align: justify; margin-bottom: 15px; color: #fff; }
+.trangchu .layer ul { margin-left: 15px; }
+.trangchu .layer ul li{ font-size: 14px; text-align: justify; color: #fff; list-style: circle; }
+.trangchu .layer p{ font-size: 14px; text-align: justify; }
+.trangchu button.chitiet{ position: absolute; z-index: 9; bottom: 20px; right: 20px; padding: 10px 20px; border: none; background: var(--sub-color);  border-radius: 5px; font-weight: bold; font-size: 17px; }
+.trangchu .modal-body { background: var(--main-color); }
+.trangchu .modal-body h2{ color: #fff; font-size: 18px; margin-bottom: 15px; }
+.trangchu .modal-body p{ color: #fff; font-size: 14px; text-align: left; }
+.trangchu .modal-body ul { margin-left: 15px; }
+.trangchu .modal-body ul li{ color: #fff; font-size: 14px; text-align: left; list-style: circle; }
+
+.vitri { background-color: #1a3c75; background-image: url(../imgs/bg-main.png) }
+.vitri img{ height: 100vh; width: 100%; object-fit: cover;}
+.vitri .content{ display: flex; flex-direction: column; text-align: left; justify-content: center; padding-left: 100px; padding-top: 180px; }
+.vitri .content h2{ color: #E0CDAE; font-size: 26px; }
+.vitri .content p{ color: #E0CDAE; font-size: 14px; }
+.vitri .content ul li{ color: #fff; font-size: 14px; list-style: circle; margin-left: 20px; font-size: 13px; }
+
+.phankhu { background-color: var(--main-color); background-image: url(../imgs/bg-main.png)  }
+.phankhu .image-full{ width: 100%; height: 100%; }
+.phankhu img{ width: 100%; }
+.menu-matbang ul{ display: flex; justify-content: center; margin-top: 10px;flex-wrap: wrap; }
+.menu-matbang ul li{ padding: 10px 0px; margin: 0 10px; border-bottom: 1px solid var(--sub-color);  }
+.menu-matbang ul li a{ padding: 10px; color: var(--sub-color); }
+.menu-matbang ul li a:hover{ text-decoration: none; background: #0d2958; color: #e0cdae; }
+.menu-matbang img{ width: auto; height: auto; }
+.phankhu .modal-body p{ color: #000; font-size: 14px; text-align: left; }
+.phankhu h2{ color: #fff; padding: 10px; }
+
+.tienich { background-color: var(--main-color-2); background-image: url(../imgs/bg-main.png)  }
+.tienich .slide{justify-content: flex-end; }
+.tienich h2{ color: #fff; font-size: 35px; }
+.tienich h3{ color: #fff; font-size: 30px; }
+.tienich p{ color: #fff; font-size: 14px; width: 50%; margin: 0 auto;}
+.tienich .info{ background-image: linear-gradient(#0d295800, #0d2958ad); padding-bottom: 100px; padding-top: 200px; position: absolute; bottom: 0; width: 100%; }
+
+.tintuc{ color: #fff; text-align: left; }
+.tintuc .iteam{ position: relative; height: 220px; margin-bottom: 20px; }
+.tintuc .iteam .info{ position: absolute; bottom: 0; left: 0; width: 100%; padding: 15px; background-image: linear-gradient(#0d295800, #0d2958ad); }
+.tintuc .iteam img{ width: 100%; height: 100%; object-fit: cover;}
+.tintuc h2{ font-size: 1.8rem; margin-bottom: 20px; text-align: center; }
+.tintuc .iteam h3{ font-size: 1.2rem; }
+.tintuc .iteam p{ font-size: 13px; }
+.tintuc .iteam a{ color: #fff; }
+
+.thuvien {background-image: url(../imgs/bg-main.png); background-color: var(--main-color-2);}
+.thuvien h2{ text-align: center; color: #fff; margin-bottom: 20px; }
+.thuvien img{ height: 50vh; width: 100%; object-fit: cover; }
+.thuvien .modal-body img{ height: 80vh; width: 100%; object-fit: cover; }
+.thuvien .modal-lg {width: 80% !important; margin-top: 10vh;}
+.thuvien .modal-body{ padding: 0; }
+.swiper-slide {cursor: pointer;}
+.swiper-pagination-bullet-active {width: 30px !important;border-radius: 10px;}
+
+.dangky { background-color: var(--main-color); background-image: url(../imgs/bg-main.png) }
+.dangky h2{ color: #fff; margin-bottom: 30px; }
+.dangky p{ font-size: 14px; text-align: left; }
+.dangky form{ width: 40%; margin: 0 auto; }
+.dangky input{ margin-bottom: 20px; background: none; border: .5px solid #fff; color: #fff; }
+.form-control:focus{ background: none; color: #fff; }
+
+.lienhe { background-color: var(--main-color-2); background-image: url(../imgs/bg-main.png) }
+.lienhe h2{ color: #fff; margin-bottom: 30px; }
+.lienhe h5{ color: #fff; text-align: left; }
+.lienhe img{ height: 150px; width: auto !important; margin-bottom: 50px; }
+.lienhe p{ font-size: 14px; text-align: left; }
+
+button.close{ 
+    top: -5px;position: absolute;opacity: 1;
+    right: -5px;
+    width: 25px;
+    height: 25px; color: #0e2957;
+    box-shadow: 0px 0px 0px 2px #0e2957;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 99999999; }
+    button.close:hover{ opacity: 1; }
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/*jssor slider bullet skin 057 css*/
+.jssorb057 .i {position:absolute;cursor:pointer;}
+.jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+.jssorb057 .i:hover .b {stroke-opacity:.7;}
+.jssorb057 .iav .b {stroke-opacity: 1;}
+.jssorb057 .i.idn {opacity:.3;}
+/*jssor slider arrow skin 073 css*/
+.jssora073 {display:block;position:absolute;cursor:pointer;}
+.jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+.jssora073:hover {opacity:.8;}
+.jssora073.jssora073dn {opacity:.4;}
+.jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+
+
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+animation-name: jssorl-009-spin;
+animation-duration: 1.6s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+
+/*jssor slider arrow skin 106 css*/
+.jssora106 {display:block;position:absolute;cursor:pointer;}
+.jssora106 .c {fill:#fff;opacity:.3;}
+.jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+.jssora106:hover .c {opacity:.5;}
+.jssora106:hover .a {opacity:.8;}
+.jssora106.jssora106dn .c {opacity:.2;}
+.jssora106.jssora106dn .a {opacity:1;}
+.jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+/*jssor slider thumbnail skin 101 css*/
+.jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000; border-radius: 10px;}
+.jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;box-sizing:border-box;z-index:1;border-radius: 10px;}
+.jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+.jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+.jssort101 .p:hover{padding:2px;}
+.jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+.jssort101 .p:hover.pdn{padding:0;}
+.jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+.jssort101 .pav .cv {border-color:#fff;opacity:.35;border-radius: 10px;}
+.jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+.jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;border-radius: 10px;}
+.jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+
+
+

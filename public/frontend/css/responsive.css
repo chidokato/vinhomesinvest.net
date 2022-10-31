@@ -1,0 +1,70 @@
+:root {
+    --main-color:#0c2753;
+    --sub-color:#E0CDAE;
+}
+
+@media (max-width: 820px){
+	.d-none{ display: block !important; }
+	.m-none{ display: none; }
+	.menu .logo img{ height: 70px; }
+	#menu{ background-color:#0c2651 ;     padding-bottom: 10px; padding-top: 10px; }
+	#myVideo{ height: auto !important; top: auto !important; bottom: auto !important; position: relative; margin-bottom: 20px; }
+	.trangchu .content {padding: 20px 10px;}
+	.vitri img{ width: 100%; height: auto; margin: 0 auto; }
+	.vitri .content{ padding-left: 10px; padding-right: 10px; padding-top: 0;}
+	/*.vitri .row{ flex-direction: column-reverse; }*/
+	/*.trangchu, .vitri, .tintuc, .thuvien, .dangky, .lienhe{ height: auto !important;}*/
+	.trangchu{ padding-top: 90px; }
+	.vitri{ padding-top: 30px; }
+	body section.slideshow { height: 50vh; }
+	body section.slideshow .detail .detail-item .background{ position: unset;transform: none !important; height: 50vh !important; }
+	.tienich p{ width: 95%; }
+	body section.slideshow ul.navigation li.navigation-item{ width: 60px; height: 60px; }
+	body section.slideshow ul.navigation{ width: 200px; height: 200px; left: -75px; bottom: 50%; margin-top: auto; }
+
+	.menu button{ background: none; border: 1px solid #fff;color: #fff;position: absolute; right: 15px; top: 15px;}
+	.menu .menu-iteam{background: #0c2651;display: flex;flex-direction: column;width: 300px;position: absolute;right: 0;top: 48px; }
+	.dropdown-menu{background: #0c254e; top: 57px; right: 0; left: auto; width: 200px;}
+	.dropdown-menu li{list-style: none; width: 100%;}
+	#menu li.active a:after{ content: none; }
+	.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{ background-color: #17376a; }
+	#menu li {margin: 5px 0;}
+	.dangky form {width: 80%;}
+	.phankhu img{ height: auto; width: 100%; }
+	.thuvien .single-testimonial-item img{ height: 30vh; }
+	.thuvien .modal-lg { width: 96% !important;}
+	.section{ height: auto !important; }
+	.phankhu .modal-lg{ margin: 1vh 2%; width: 96%; }
+	.phankhu .modal-content{ height: 90vh; }
+	.trangchu .content p{ color: var(--sub-color); }
+	.vitri { padding-bottom: 50px; }
+	.phankhu { padding: 50px 0px }
+	.thuvien{ padding-bottom: 50px; padding-top: 50px; }
+	.dangky{ padding-bottom: 50px; padding-top: 50px; }
+	.lienhe { padding-bottom: 50px; padding-top: 50px; }
+	.menu-matbang img{ width: auto; height: auto; }
+}
+
+@media (max-width: 414px){
+	#fp-nav.fp-left{ display: none; }	
+	.tienich h2{ font-size: 20px; }
+	.tienich h3{ font-size: 18px; }
+	.tienich p{ font-size: 14px; }
+	.thuvien .single-testimonial-item img{ height: 30vh; }
+	.thuvien .slider2 .single-testimonial-item img{ height: 50vh !important; }
+	.thuvien .modal-lg{ margin-top: 10vh; }
+	.thuvien .modal-lg { width: 94% !important;}
+	.thuvien .container{ margin: inherit !important; }
+	.thuvien .modal-body img{ height: 60vh; }
+	.phankhu h2{ font-size: 20px; }
+	.phankhu { padding: 20px 0px; padding-top: 0px; }
+	.tienich .info{ padding-bottom: 10px; padding-right: 10px; padding-left: 10px; }
+	body section.slideshow ul.navigation li.navigation-item {width: 40px;height: 40px;}
+	body section.slideshow ul.navigation { width: 150px;height: 150px; left: -55px;}
+	.thuvien{ padding-bottom: 30px; padding-top: 30px; }
+	.thuvien h2{ font-size: 18px; }
+	.menu-matbang ul{ flex-direction: column; }
+	.menu-matbang ul li{ margin: 0 20%; text-align: left; }
+	.menu-matbang ul li a{ padding-left: 0px; }
+	.menu {padding-left: 125px !important;}
+}
