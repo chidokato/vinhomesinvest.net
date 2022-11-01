@@ -11,7 +11,7 @@
                     <div class="swiper-wrapper">
                         @foreach($val->section as $sec)
                         <div class="swiper-slide">
-                            <img data-toggle="modal" data-target="#myModal" src="data/ladipage/{{$sec->img}}">
+                            <img data-toggle="modal" data-target="#myModal" data-src="data/ladipage/{{$sec->img}}">
                         </div>
                         @endforeach
                     </div>
@@ -30,7 +30,7 @@
                                 <div class="swiper-wrapper">
                                     @foreach($val->section as $sec)
                                     <div class="swiper-slide">
-                                        <img  src="data/ladipage/{{$sec->img}}">
+                                        <img  data-src="data/ladipage/{{$sec->img}}">
                                     </div>
                                     @endforeach
                                 </div>

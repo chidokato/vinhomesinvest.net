@@ -4,7 +4,7 @@
         {!! $val->content !!}
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-8">
-        <a data-toggle="modal" data-target="#vitri" href="#"><img src="data/ladipage/{{$val->img}}"></a>
+        <a data-toggle="modal" data-target="#vitri" href="#"><img data-src="data/ladipage/{{$val->img}}"></a>
     </div>
 </div>
 
@@ -18,7 +18,7 @@
         <div class="modal-body">
             <div class="row">
                 <div class="col-md-8 col-lg-8">
-                    <img src="data/ladipage/{!! $sec->img !!}">
+                    <img data-src="data/ladipage/{!! $sec->img !!}">
                 </div>
                 <div class="col-md-4 col-lg-4 content">
                     <h3>{!! $sec->name !!}</h3>

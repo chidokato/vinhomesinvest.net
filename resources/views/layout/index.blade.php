@@ -102,7 +102,13 @@
         // end slider
         css3:false,
 
-        responsiveWidth: 900
+        responsiveWidth: 900,
+
+        onLeave: function(origin, destination, direction){
+          if(destination.index === 2){
+             destination.item.classList.add('load-background');
+          }
+        }
 
     });
 

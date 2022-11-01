@@ -3,7 +3,7 @@
     <div class="d-none content">
         {!! $val->content !!}
     </div>
-    <img src="data/ladipage/{{$val->img}}">
+    <img data-src="data/ladipage/{{$val->img}}">
     <div class="">
         <div class="menu-matbang">
             <ul>
@@ -30,7 +30,7 @@
             <div class="modal-body matbangphankhu">
                 <div class="row">
                     <div class="col-md-8 col-lg-8">
-                        <img src="data/ladipage/{!! $sec->img !!}">
+                        <img data-src="data/ladipage/{!! $sec->img !!}">
                     </div>
                     <div class="col-md-4 col-lg-4 content">
                         <h3>{!! $sec->name !!}</h3>
