@@ -22,7 +22,7 @@
 }
 .image-upload-wrap{position: absolute; top: 0;} .file-upload{position: relative;}
 .file-upload-image {
-    width: 100%;
+    /*width: 100%;*/
     /*margin: 10px 0px;*/
 }
 .remove-image {

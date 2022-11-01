@@ -7,7 +7,7 @@
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow fixed">
     <button type="button" id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="fa fa-bars"></i></button>
     <ul class="navbar-nav ">
-        <li class="nav-item"> <a class="nav-link line-1" href="admin/category/list" ><i class="fa fa-chevron-left" aria-hidden="true"></i> <span class="mobile-hide">Quay lại trang danh sách danh mục</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link line-1" href="admin/category/list" ><i class="fa fa-chevron-left" aria-hidden="true"></i> <span class="mobile-hide">Quay lại </span> </a> </li>
     </ul>
     <ul class="navbar-nav ml-auto">
         <li class="nav-item mobile-hide">
@@ -44,22 +44,22 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Name</label>
-                            <input value="{{ isset($data) ? $data->name : '' }}" name="name" placeholder="Tên danh mục" type="text" class="form-control">
+                            <input value="{{ isset($data) ? $data->name : '' }}" name="name" placeholder="Name" type="text" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <label>View</label>
-                            <input value="{{ isset($data) ? $data->view : '' }}" name="view" placeholder="View" type="text" class="form-control">
+                            <label>Phân khu</label>
+                            <input value="{{ isset($data) ? $data->view : '' }}" name="view" placeholder="Phân khu" type="text" class="form-control">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="form-group">
                             <label>Icon</label>
                             <input value="{{ isset($data) ? $data->icon : '' }}" name="icon" placeholder="Icon" type="text" class="form-control">
                         </div>
-                    </div>
-                    <div class="col-md-6">
+                    </div> -->
+                    <!-- <div class="col-md-6">
                         <div class="form-group">
                             {!! isset($data) ? '
                             <label>Slug</label>
@@ -73,8 +73,8 @@
                             </select>
                             ' !!}
                         </div>
-                    </div>
-                    <div class="col-md-6">
+                    </div> -->
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label class="">Root</label>
                             <select id="parent" name='parent' class="form-control select2">
@@ -90,15 +90,12 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea name="content" class="form-control" id="ckeditor">{{ isset($data) ? $data->content : '' }}</textarea>
+                            <textarea name="content" rows="5" class="form-control" id="ckeditor">{{ isset($data) ? $data->content : '' }}</textarea>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        @include('admin.layout.seooption')
-    </div>
-    <div class="col-xl-3 col-lg-3">
         <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary">Images</h6>
@@ -106,7 +103,7 @@
             <div class="card-body">
                 <div class="file-upload">
                     <div class="file-upload-content" onclick="$('.file-upload-input').trigger( 'click' )">
-                        <img class="file-upload-image" src="{{ isset($data) ? 'data/category/'.$data->img : 'data/no_image.jpg' }}" />
+                        <img style="max-width: 100% !important;" class="file-upload-image" src="{{ isset($data) ? 'data/category/'.$data->img : 'data/no_image.jpg' }}" />
                     </div>
                     <div class="image-upload-wrap">
                         <input name="img" class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
@@ -116,30 +113,12 @@
             </div>
 
         </div>
+        <!-- @include('admin.layout.seooption') -->
+    </div>
+    <div class="col-xl-3 col-lg-3">
+        
 
-        <div class="card shadow mb-2">
-            <div class="card-body">
-                <div class="form-group">
-                    <div class="checkboxes__item">
-                      <label class="checkbox style-e">
-                        <input type="checkbox" checked="checked"/>
-                        <div class="checkbox__checkmark"></div>
-                        <div class="checkbox__body">Style E</div>
-                      </label>
-                    </div>
-                </div>
-                <hr class="lines">
-                <div class="form-group">
-                    <div class="checkboxes__item">
-                      <label class="checkbox style-e">
-                        <input type="checkbox" checked="checked"/>
-                        <div class="checkbox__checkmark"></div>
-                        <div class="checkbox__body">Style E</div>
-                      </label>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
     </div>
 </div>

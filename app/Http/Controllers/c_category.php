@@ -70,7 +70,7 @@ class c_category extends Controller
         $category->sku = str_random(8);
         $category->slug = changeTitle($Request->name);
         $category->content = $Request->content;
-        $category->sort_by = $Request->sort_by;
+        $category->sort_by = 1;
         $category->parent = $Request->parent;
         $category->icon = $Request->icon;
         $category->status = 'true';

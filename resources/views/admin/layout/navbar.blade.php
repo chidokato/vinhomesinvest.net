@@ -20,9 +20,9 @@
     </li>
     <!-- <hr class="sidebar-divider"> -->
     <!-- <div class="sidebar-heading">Interface</div> -->
-    <!-- <li class="nav-item">
-        <a class="nav-link" href="admin/category/list"><i class="fas fa-fw fa-chart-area"></i><span>Danh mục</span></a>
-    </li> -->
+    <li class="nav-item">
+        <a class="nav-link" href="admin/category/list"><i class="fas fa-fw fa-chart-area"></i><span>Phân khu</span></a>
+    </li>
     <!-- <li class="nav-item">
         <a class="nav-link" href="admin/product/list"><i class="fas fa-fw fa-chart-area"></i><span>Sản phẩm</span></a>
     </li>

@@ -1,26 +1,46 @@
 <div class="section phankhu">
     <h2>{{$val->name}}</h2>
+    <div class="d-none content">
+        {!! $val->content !!}
+    </div>
     <img src="data/ladipage/{{$val->img}}">
     <div class="">
         <div class="menu-matbang">
             <ul>
-                @foreach($val->section as $sec)
-                <li><a data-toggle="modal" data-target="#matbang" href="#"> <img src="data/ladipage/{{$sec->img}}"> {{$sec->name}} </a></li>
+                @foreach($val->section as $key => $sec)
+                <li><a data-toggle="modal" data-target="#matbang{{$sec->id}}" href="#"> <img src="frontend/imgs/<?php
+                    if($key==0){echo 'daodua.png';}
+                    if($key==1){echo 'sanho.png';}
+                    if($key==2){echo 'haiau.png';}
+                    if($key==3){echo 'chala.png';}
+                    if($key==4){echo 'saobien.png';}
+                    if($key==5){echo 'coxanh.png';}
+                ?>"> {{$sec->name}} </a></li>
                 @endforeach
             </ul>
         </div>
     </div>
-    <div class="modal fade bd-example-modal-lg" id="matbang" role="dialog">
+    @foreach($val->section as $key => $sec)
+    <div class="modal fade bd-example-modal-lg" id="matbang{{$sec->id}}" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
             </button>
-            <div class="modal-body">
-                <p>Located at the gateway of Hanoi - Hai Phong highway, in the territory of 2 communes Nghia Tru and Long Hung, Van Giang district, Hung Yen province. Vinhomes Ocean Park 2 - The Empire urban area is parallel to the arterial road connecting "Economic triangle: Hanoi - Hai Phong - Ha Long".</p>
-                <p>In addition, the project also fully owns the key traffic connections of Gia Lam from everywhere to Vinhomes Ocean Park - The Empire including Co Linh Interchange (400 billion): Completed in January 2021 and broaden with 4 lanes, expected to be completed in 2023.</p>
+            <div class="modal-body matbangphankhu">
+                <div class="row">
+                    <div class="col-md-8 col-lg-8">
+                        <img src="data/ladipage/{!! $sec->img !!}">
+                    </div>
+                    <div class="col-md-4 col-lg-4 content">
+                        <h3>{!! $sec->name !!}</h3>
+                        {!! $sec->content !!}
+                    </div>
+                </div>
             </div>
           </div>
         </div>
     </div>
+    @endforeach
 </div>
+

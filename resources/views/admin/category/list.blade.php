@@ -4,7 +4,7 @@
 @include('admin.layout.header')
 @include('admin.errors.alerts')
 <div class="d-sm-flex align-items-center justify-content-between mb-3 flex">
-    <h2 class="h3 mb-0 text-gray-800 line-1 size-1-3-rem">Danh sách danh mục</h2>
+    <h2 class="h3 mb-0 text-gray-800 line-1 size-1-3-rem"></h2>
     <a class="add-iteam" href="admin/category/add"><button class="btn-success form-control" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Thêm mới</button></a>
 </div>
 

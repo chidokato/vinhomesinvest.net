@@ -43,6 +43,11 @@
 	.dangky{ padding-bottom: 50px; padding-top: 50px; }
 	.lienhe { padding-bottom: 50px; padding-top: 50px; }
 	.menu-matbang img{ width: auto; height: auto; }
+	.phankhu .modal-lg {width: 96% !important;}
+	.phankhu .modal-body img{ height: 45vh; }
+	.matbangphankhu .content{ height: 45vh; justify-content: flex-start; padding-left: 30px; }
+
+
 }
 
 @media (max-width: 414px){
@@ -64,7 +69,7 @@
 	.thuvien{ padding-bottom: 30px; padding-top: 30px; }
 	.thuvien h2{ font-size: 18px; }
 	.menu-matbang ul{ flex-direction: column; }
-	.menu-matbang ul li{ margin: 0 20%; text-align: left; }
+	.menu-matbang ul li{text-align: left; }
 	.menu-matbang ul li a{ padding-left: 0px; }
 	.menu {padding-left: 125px !important;}
 }

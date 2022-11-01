@@ -117,6 +117,13 @@
 .menu-matbang img{ width: auto; height: auto; }
 .phankhu .modal-body p{ color: #000; font-size: 14px; text-align: left; }
 .phankhu h2{ color: #fff; padding: 10px; }
+.phankhu .content{ padding: 0 15px; }
+.phankhu .content p{ font-size: 14px; text-align: justify; }
+.phankhu .modal-lg {width: 80% !important; margin-top: 10vh;}
+.phankhu .modal-body img { height: 80vh; width: 100%;  object-fit: cover;}
+.matbangphankhu{ background-color: var(--main-color); padding: 0px; }
+.matbangphankhu .content{ color: #fff; height: 80vh; display: flex; padding-right: 30px;align-items: center; flex-direction: column; justify-content: center; }
+.matbangphankhu .content{text-align: justify;}
 
 .tienich { background-color: var(--main-color-2); background-image: url(../imgs/bg-main.png)  }
 .tienich .slide{justify-content: flex-end; }
