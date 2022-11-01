@@ -8,7 +8,7 @@
         <div class="menu-matbang">
             <ul>
                 @foreach($val->section as $key => $sec)
-                <li><a data-toggle="modal" data-target="#matbang{{$sec->id}}" href="#"> <img src="frontend/imgs/<?php
+                <li><a data-toggle="modal" data-target="#matbang{{$sec->id}}" href="#"> <img data-src="frontend/imgs/<?php
                     if($key==0){echo 'daodua.png';}
                     if($key==1){echo 'sanho.png';}
                     if($key==2){echo 'haiau.png';}
