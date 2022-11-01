@@ -112,7 +112,7 @@
     </div>
     <div class="section lienhe">
         <h2>CONTACT</h2>
-        <div><img src="data/themes/{{$head_logo->img}}"></div>
+        <div><img src="data/themes/{{$head_logo_trang->img}}"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

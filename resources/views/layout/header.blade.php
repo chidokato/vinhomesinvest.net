@@ -3,7 +3,7 @@
 
 <div id="menu" class="menu">
     <div class="logo">
-        <a href="{{asset('')}}"><img src="data/themes/{{$head_logo->img}}"></a>
+        <a href="{{asset('')}}"><img src="data/themes/{{$head_logo_trang->img}}"></a>
     </div>
     <ul class="m-none">
         @foreach($menu as $key => $val)
