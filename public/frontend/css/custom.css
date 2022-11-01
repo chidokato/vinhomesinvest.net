@@ -150,8 +150,17 @@
 .swiper-slide {cursor: pointer;}
 .swiper-pagination-bullet-active {width: 30px !important;border-radius: 10px;}
 
+.tiendo{ background-image: url(../imgs/bg-main.png); background-color: var(--main-color-2); padding-top: 30px; padding-bottom: 30px; }
+.tiendo .content{ padding: 15px; }
+.tiendo h2{ font-size: 22px; color: #fff; text-align: justify; }
+.tiendo p{ font-size: 14px; color: #fff; text-align: justify; }
+.tiendo ul li{ font-size: 14px; color: #fff; list-style: circle; text-align: justify; }
+.tiendo ul{ margin-left: 15px; }
+.tiendo .dangky{ background: none; }
+.tiendo .dangky form{ width: 90%; }
+
 .dangky { background-color: var(--main-color); background-image: url(../imgs/bg-main.png) }
-.dangky h2{ color: #fff; margin-bottom: 30px; }
+.dangky h2{ color: #fff; margin-bottom: 30px; font-size: 22px; text-align: center; }
 .dangky p{ font-size: 14px; text-align: left; }
 .dangky form{ width: 40%; margin: 0 auto; }
 .dangky input{ margin-bottom: 20px; background: none; border: .5px solid #fff; color: #fff; }

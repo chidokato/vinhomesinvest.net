@@ -83,10 +83,10 @@
         verticalCentered: true,
         // sectionsColor: ['#0c254e', '#1f4481', '#0c254e', '#0c254e', '#0c254e', '#0c254e', '#0c254e'], // backgroud corlor
 
-        anchors: ['home', 'location', 'utilities', 'project-area', 'library', 'subscribe', 'contact'],
+        anchors: ['home', 'location', 'utilities', 'project-area', 'library', 'payment-schedule', 'subscribe', 'contact'],
         // verticalCentered: false,
         navigation:true,
-        navigationTooltips: ['Home', 'Location', 'Utilities', 'Project area', 'Library', 'Subscribe', 'Contact'],
+        navigationTooltips: ['Home', 'Location', 'Utilities', 'Project area', 'Library', 'Payment schedule', 'Subscribe', 'Contact'],
         showActiveTooltip: true,
         
         navigationPosition: "left",

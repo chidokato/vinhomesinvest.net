@@ -24,6 +24,8 @@
             @include('pages.ladipage.matbang')
         @elseif ($key == 4)
             @include('pages.ladipage.hinhanh')
+        @elseif ($key == 5)
+            @include('pages.ladipage.tiendo')
         @endif
     @endforeach
     
@@ -102,6 +104,7 @@
 
     <div class="section dangky">
         <h2>REGISTER INFORMATION</h2>
+        <div><img style="height: 150px;width: auto !important; margin-bottom: 50px;" src="data/themes/{{$head_logo_trang->img}}"></div>
         <form action="" method="post">
             <input type="text" name="name" class="form-control" placeholder="Your Name">
             <input type="text" name="phone" class="form-control" placeholder="Phone number">
