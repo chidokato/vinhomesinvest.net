@@ -27,6 +27,13 @@ use Mail;
 
 class c_ajax extends Controller
 {   
+    public function viewslayout($id)
+    {
+        if(Request::ajax()){
+            $category = category::find($id);
+            echo '<img src="data/category/'.$category->img.'">';
+        }
+    }
     // category
     public function sortby($id)
     {

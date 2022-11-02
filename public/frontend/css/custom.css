@@ -126,6 +126,11 @@
 .matbangphankhu{ background-color: var(--main-color); padding: 0px; }
 .matbangphankhu .content{ color: #fff; height: 80vh; display: flex; padding-right: 30px;align-items: center; flex-direction: column; justify-content: center; }
 .matbangphankhu .content{text-align: justify;}
+.matbangphankhu .content h3{text-align: left;}
+button.layout{ border: 1px solid var(--sub-color); background: none; padding: 7px 20px; border-radius: 5px; color: var(--sub-color); margin-top: 20px; font-weight: bold; width: 80%; text-transform: uppercase; }
+.phankhu .layout img{ height: auto !important; }
+.phankhu .layout .namelayout ul{ display: flex;justify-content: center;padding: 15px; }
+
 
 .tienich { background-color: var(--main-color-2); background-image: url(../imgs/bg-main.png)  }
 .tienich .slide{justify-content: flex-end; }

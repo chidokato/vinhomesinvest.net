@@ -60,3 +60,22 @@ var swiper2 = new Swiper(".broker-slider2 .swiper", {
         }
     },
 });
+
+
+$(document).ready(function(){
+    $("a#namelayout").click(function(){
+        var id = $(this).parents('#presentation').find('input[id="idlayout"]').val();
+        // alert(id);
+        $.ajax({
+            url:  'ajax/viewslayout/'+id,
+            type: 'GET',
+            cache: false,
+            data: {
+                "id":id,
+            },
+            success: function(data){
+                $('#data').html(data);
+            }
+        });
+    });
+}); // update menu

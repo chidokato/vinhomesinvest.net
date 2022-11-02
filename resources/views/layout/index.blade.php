@@ -78,6 +78,7 @@
 <script src="frontend/js/swiper-bundle.min.js"></script>
 <script src="frontend/js/thuvien.js"></script>
 
+
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         verticalCentered: true,

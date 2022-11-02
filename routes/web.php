@@ -250,6 +250,7 @@ Route::get('profile','c_frontend@profile');
 Route::get('messages','c_frontend@messages');
 Route::get('/search','c_frontend@search');
 Route::get('ajax/change_province/{id}','c_ajax@change_province');
+Route::get('ajax/viewslayout/{id}','c_ajax@viewslayout');
 
 Route::get('update_status_messages/{id}','c_ajax@update_status_messages');
 Route::get('del_messages/{id}','c_ajax@del_messages');
