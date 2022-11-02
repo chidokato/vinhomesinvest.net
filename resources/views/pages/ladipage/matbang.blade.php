@@ -80,14 +80,14 @@
                 <div class="slider">
                     <div class="slides">
                         @foreach($layout as $key => $val)
-                        <div id="slide-{{$key}}">
+                        <div id="slide-{{$sec->id}}-{{$key}}">
                             <img src="data/category/{{$val->img}}">
                         </div>
                         @endforeach
                     </div>
                     <div class="thumbnail">
                         @foreach($layout as $key => $val)
-                        <a href="#slide-{{$key}}">{{$val->name}}</a>
+                        <a href="#slide-{{$sec->id}}-{{$key}}">{{$val->name}}</a>
                         @endforeach
                     </div>
                 </div>
