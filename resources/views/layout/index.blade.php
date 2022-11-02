@@ -39,7 +39,7 @@
 <link rel="stylesheet" type="text/css" href="frontend/fullpage.css" />
 <link rel="stylesheet" type="text/css" href="frontend/examples.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- front chữ -->
 <link rel="stylesheet" type="text/css" href="frontend/css/slider-tienich.css" /> <!-- tiện ích -->
 <!-- thư viện -->
