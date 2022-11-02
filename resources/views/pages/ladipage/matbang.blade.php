@@ -77,19 +77,19 @@
                   <span aria-hidden="true">&times;</span>
             </button>
             <div class="modal-body matbangphankhu layout">
-                @foreach($layout as $key => $val)
-                    @if($key==0)
-                    <div id="data">
-                        <img data-src="data/category/{{$val->img}}">
-                    </div>
-                    @endif
-                @endforeach
-                <div class="namelayout">
-                    <ul class="nav nav-pills" role="tablist">
+                <div class="slider">
+                    <div class="slides">
                         @foreach($layout as $key => $val)
-                        <li role="presentation" id="presentation" class="{{ $key==0 ? 'active' : '' }}"><input type="hidden" id="idlayout" value="{{$val->id}}" name=""><a href="#" id="namelayout" aria-controls="home" role="tab" data-toggle="tab">{{$val->name}}</a></li>
+                        <div id="slide-{{$key}}">
+                            <img src="data/category/{{$val->img}}">
+                        </div>
                         @endforeach
-                    </ul>
+                    </div>
+                    <div class="thumbnail">
+                        @foreach($layout as $key => $val)
+                        <a href="#slide-{{$key}}">{{$val->name}}</a>
+                        @endforeach
+                    </div>
                 </div>
             </div>
           </div>
@@ -105,3 +105,7 @@
 
 </div>
 
+<style type="text/css">
+
+
+</style>

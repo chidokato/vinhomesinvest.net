@@ -74,6 +74,9 @@
 	.menu {padding-left: 125px !important;}
 	.row {margin-right: 0;margin-left: 0;}
 	.phankhu .modal-body img {height: 30vh;}
-	.matbang .imgs{ height: auto; }
-	.button.layout{ width: 95%; }
+	.matbang .imgs{ height: auto;margin-top: 20px; }
+	button.layout{ width: 95%; }
+	.thuvien img{ height: 37vh; }
+	.vitri{ background-color: none; }
+	.slider{ margin-top: 30px; }
 }
