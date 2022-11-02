@@ -79,7 +79,8 @@ class c_category extends Controller
             $file = $Request->file('img'); $filename = $file->getClientOriginalName();
             while(file_exists("data/category/".$filename)){$filename = str_random(4)."_".$filename;}
             $img = Image::make($file)->resize(120, 120, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/category/thumbnail/'.$filename));
-            $img = Image::make($file)->resize(1000, 1000, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/category/'.$filename));
+            // $img = Image::make($file)->resize(1000, 1000, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/category/'.$filename));
+            $file->move('data/category', $filename);
             $category->img = $filename;
         }
         $category->save();
@@ -124,7 +125,8 @@ class c_category extends Controller
             $filename = $file->getClientOriginalName();
             while(file_exists("data/category/".$filename)){$filename = str_random(4)."_".$filename;}
             $img = Image::make($file)->resize(120, 120, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/category/thumbnail/'.$filename));
-            $img = Image::make($file)->resize(1000, 1000, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/category/'.$filename));
+            // $img = Image::make($file)->resize(1000, 1000, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/category/'.$filename));
+            $file->move('data/category', $filename);
             $category->img = $filename;
             // thêm ảnh mới
         }
