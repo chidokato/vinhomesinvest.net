@@ -127,9 +127,18 @@
 .matbangphankhu .content{ color: #fff; height: 80vh; display: flex; padding-right: 30px;align-items: center; flex-direction: column; justify-content: center; }
 .matbangphankhu .content{text-align: justify;}
 .matbangphankhu .content h3{text-align: left;}
+.matbangphankhu .content ul{ height: 45vh; overflow: auto; width: 100%; padding-left: 17px; }
+.matbangphankhu .content ul li{ list-style: circle; margin-bottom: 3px; }
+.matbangphankhu .content ul::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 20px #fff;background-color: var(--main-color-2);}
+.matbangphankhu .content ul::-webkit-scrollbar{width: 10px;background-color: var(--main-color-2);}
+.matbangphankhu .content ul::-webkit-scrollbar-thumb{background-color: var(--sub-color);}
 button.layout{ border: 1px solid var(--sub-color); background: none; padding: 7px 20px; border-radius: 5px; color: var(--sub-color); margin-top: 20px; font-weight: bold; width: 80%; text-transform: uppercase; }
 .phankhu .layout img{ height: auto !important; }
 .phankhu .layout .namelayout ul{ display: flex;justify-content: center;padding: 15px; }
+.matbang .col-md-8{ display: flex; }
+.matbang .col-md-8 img{ height: auto; }
+.matbang .imgs{height: 80vh;display: flex;flex-direction: column;justify-content: center;background: #fff; }
+.phankhu .modal-content{ background: var(--main-color); }
 
 
 .tienich { background-color: var(--main-color-2); background-image: url(../imgs/bg-main.png)  }

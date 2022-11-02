@@ -52,13 +52,14 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
             </button>
-            <div class="modal-body matbangphankhu">
+            <div class="modal-body matbangphankhu matbang">
                 <div class="row">
                     <div class="col-md-8 col-lg-8">
-                        <img data-src="data/category/{!! $matbang->img !!}">
+                        <div class="imgs"><img data-src="data/category/{!! $matbang->img !!}"></div>
                     </div>
                     <div class="col-md-4 col-lg-4 content">
                         <h3>{{$matbang->name}}</h3>
+                        {!! $matbang->content !!}
                         <button class="layout" data-toggle="modal" data-target="#layout{{$sec->id}}" data-dismiss="modal" aria-label="Close"> Layout of the low-rise area</button>
                     </div>
                 </div>
