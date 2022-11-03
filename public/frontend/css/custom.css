@@ -107,7 +107,9 @@
 .vitri .content p{ color: #E0CDAE; font-size: 14px; }
 .vitri .content ul li{ color: #fff; font-size: 14px; list-style: circle; margin-left: 20px; font-size: 13px; }
 .vitri .modal-content{ background: var(--main-color); }
+.vitri .modal-content img{ height: auto; }
 .vitri .modal-content p{ color: #fff; text-align: justify; }
+.vitri .modal-content .content{ padding: 0; padding-right: 10px; }
 
 .phankhu { background-color: var(--main-color); background-image: url(../imgs/bg-main.png)  }
 .phankhu .image-full{ width: 100%; height: 100%; }
@@ -355,3 +357,13 @@ to { transform: rotate(360deg); }
     display: none;
   }
 }
+
+.contact{ position: fixed; bottom: 20px; left: 20px; z-index: 999;  }
+.contact ul{ display: flex; }
+.contact ul li{ list-style: none; margin-right: 20px; }
+.contact ul li a{ background: var(--sub-color); padding: 10px 20px; border-radius: 3px; box-shadow: 0px 0px 2px 2px; font-weight: bold; }
+.contact ul li a:hover{ text-decoration: none; }
+.contact i{ color: var(--main-color); margin-right: 5px; }
+.lienhe-popup{ background: var(--main-color); padding: 30px; }
+.lienhe-popup input{ background: none; border: 1px solid var(--sub-color); margin-bottom: 20px; }
+.lienhe-popup h2{ color: #fff; margin-bottom: 20px; }

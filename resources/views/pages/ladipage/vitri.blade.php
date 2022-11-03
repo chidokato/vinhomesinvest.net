@@ -18,7 +18,7 @@
         <div class="modal-body">
             <div class="row">
                 <div class="col-md-8 col-lg-8">
-                    <img data-src="data/ladipage/{!! $sec->img !!}">
+                    <img src="data/ladipage/{{$sec->img}}">
                 </div>
                 <div class="col-md-4 col-lg-4 content">
                     <h3>{!! $sec->name !!}</h3>

@@ -28,15 +28,6 @@
             @include('pages.ladipage.tiendo')
         @endif
     @endforeach
-    
-    
-
-    
-
-    
-
-    
-
 
     <!-- <div class="section tintuc">
         <div class="container">
@@ -105,7 +96,9 @@
     <div class="section dangky">
         <h2>REGISTER INFORMATION</h2>
         <div><img style="height: 150px;width: auto !important; margin-bottom: 50px;" data-src="data/themes/{{$head_logo_trang->img}}"></div>
-        <form action="" method="post">
+        <form id="validateForm" action="dang-ky" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_token" value="{{csrf_token()}}" />
+            <input type="hidden" name="link" value="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>" />
             <input type="text" name="name" class="form-control" placeholder="Your Name">
             <input type="text" name="phone" class="form-control" placeholder="Phone number">
             <input type="email" name="email" class="form-control" placeholder="Email">
@@ -120,9 +113,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h5>CONTACT</h5>
-                    <p>Phone: 1900 23 23 89</p>
-                    <p>Email: info@vinhomes.vn</p>
-                    <p>Address: Trung tâm giao dịch Bất động sản Vinhomes, L3-01, Tầng 2, TTTM Vincom Mega Mall, Vinhomes Ocean Park, Gia Lâm, Hà Nội</p>
+                    <p>Phone: <a href="tel:{{$head_setting->hotline}}">{{$head_setting->hotline}}</a></p>
+                    <p>Email: {{$head_setting->email}}</p>
+                    <p>Address: {{$head_setting->address}}</p>
                 </div>
                 <div class="col-lg-6">
                     <h5>ATTENTION</h5>
@@ -134,6 +127,34 @@
 
 </div>
 
+<div class="contact">
+    <ul>
+        <li> <a data-toggle="modal" data-target="#REGISTER" href="#"><i class="fa fa-paper-plane-o"></i> REGISTER</a> </li>
+        <li> <a href="tel:{{$head_setting->hotline}}"><i class="fa fa-phone"></i> {{$head_setting->hotline}}</a> </li>
+    </ul>
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="REGISTER" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body lienhe-popup">
+            <h2>REGISTER INFORMATION</h2>
+            <form id="validateForm" action="dang-ky" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="{{csrf_token()}}" />
+                <input type="hidden" name="link" value="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>" />
+                <input type="text" name="name" class="form-control" placeholder="Your Name">
+                <input type="text" name="phone" class="form-control" placeholder="Phone number">
+                <input type="email" name="email" class="form-control" placeholder="Email">
+                <p><div class="g-recaptcha" data-sitekey="6LfsErkiAAAAABhpVqPBI85ByiHOUvdQ-h2TT_X2"></div></p>
+                <button class="form-control" type="submit">REGISTER</button>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
 
 @endsection
 

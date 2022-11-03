@@ -46,7 +46,6 @@
 <link href="frontend/css/swiper-bundle.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="frontend/css/custom.css" /> <!-- main -->
 <link rel="stylesheet" type="text/css" href="frontend/css/responsive.css" /> <!-- responsive -->
-
 @yield('css')
 
 {!! $head_setting->codeheader !!}

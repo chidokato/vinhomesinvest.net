@@ -73,7 +73,7 @@
 	.menu-matbang ul li a{ padding-left: 0px; }
 	.menu {padding-left: 125px !important;}
 	.row {margin-right: 0;margin-left: 0;}
-	.phankhu .modal-body img {height: 30vh;}
+	.phankhu .modal-body img {height: auto;object-fit: contain;;}
 	.matbang .imgs{ height: auto;margin-top: 20px; }
 	button.layout{ width: 95%; }
 	.thuvien img{ height: 37vh; }
