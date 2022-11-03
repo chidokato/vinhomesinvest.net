@@ -7,7 +7,7 @@
             <h2>{!! $val->name !!}</h2>
             {!! $val->content !!}
         </div>
-        <button class="m-none chitiet" data-toggle="modal" data-target="#trangchu" type="button">Chi tiết</button>
+        <button class="m-none chitiet" data-toggle="modal" data-target="#trangchu" type="button">Detail</button>
         <div class="modal fade bd-example-modal-lg" id="trangchu" role="dialog">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
