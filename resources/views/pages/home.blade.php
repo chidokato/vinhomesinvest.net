@@ -113,7 +113,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h5>CONTACT</h5>
-                    <p>Phone: <a href="tel:{{$head_setting->hotline}}">{{$head_setting->hotline}}</a></p>
+                    <p>Phone: {{$head_setting->hotline}}</p>
                     <p>Email: {{$head_setting->email}}</p>
                     <p>Address: {{$head_setting->address}}</p>
                 </div>
