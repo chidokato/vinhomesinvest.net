@@ -1,10 +1,8 @@
 <div class="section trangchu">
-        <video class="d-none" id="myVideo" loop muted data-autoplay playsinline controls>
+        <video id="myVideo" loop muted data-autoplay playsinline controls>
             <source data-src="vinhomes21.mp4" type="video/mp4">
         </video>
-        <video class="m-none" id="myVideo" loop muted data-autoplay playsinline>
-            <source data-src="vinhomes21.mp4" type="video/mp4">
-        </video>
+        
         <div class="layer">
             <h2>{!! $val->name !!}</h2>
             {!! $val->content !!}
