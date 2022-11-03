@@ -81,7 +81,7 @@
                     <div class="slides">
                         @foreach($layout as $key => $val)
                         <div id="slide-{{$sec->id}}-{{$key}}">
-                            <img src="data/category/{{$val->img}}">
+                            <img data-src="data/category/{{$val->img}}">
                         </div>
                         @endforeach
                     </div>
