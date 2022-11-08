@@ -1,6 +1,6 @@
 <div class="section trangchu">
         <video id="myVideo" loop muted data-autoplay playsinline controls>
-            <source data-src="vinhomes21.mp4" type="video/mp4">
+            <!-- <source data-src="vinhomes21.mp4" type="video/mp4"> -->
         </video>
         
         <div class="layer">

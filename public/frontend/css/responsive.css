@@ -65,7 +65,7 @@
 	.phankhu { padding: 20px 0px; padding-top: 0px; }
 	.tienich .info{ padding-bottom: 10px; padding-right: 10px; padding-left: 10px; }
 	body section.slideshow ul.navigation li.navigation-item {width: 40px;height: 40px;}
-	body section.slideshow ul.navigation { width: 150px;height: 150px; left: -55px;}
+	body section.slideshow ul.navigation { width: 200px;height: 200px; left: -110px;}
 	.thuvien{ padding-bottom: 30px; padding-top: 30px; }
 	.thuvien h2{ font-size: 18px; }
 	.menu-matbang ul{ flex-direction: column; }

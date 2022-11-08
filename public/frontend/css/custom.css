@@ -367,3 +367,40 @@ to { transform: rotate(360deg); }
 .lienhe-popup{ background: var(--main-color); padding: 30px; }
 .lienhe-popup input{ background: none; border: 1px solid var(--sub-color); margin-bottom: 20px; }
 .lienhe-popup h2{ color: #fff; margin-bottom: 20px; }
+
+
+
+
+
+
+
+ 
+body section.slideshow ul.navigation li.navigation-item .background-holder {
+  -webkit-animation: glowing 1s ease infinite;
+  -moz-animation: glowing 1s ease infinite;
+  -o-animation: glowing 1s ease infinite;
+  animation: glowing 1s ease infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+
+@-webkit-keyframes glowing {
+  0% { border: 4px solid #dbc38e; }
+  100% { border: 4px solid #0b2551; }
+}
+ 
+@-moz-keyframes glowing {
+  0% { border: 4px solid #dbc38e; }
+  100% { border: 4px solid #0b2551; }
+}
+ 
+@-o-keyframes glowing {
+  0% { border: 4px solid #dbc38e; }
+  100% { border: 4px solid #0b2551; }
+}
+ 
+@keyframes glowing {
+  0% { border: 4px solid #dbc38e; }
+  100% { border: 4px solid #0b2551; }
+}
